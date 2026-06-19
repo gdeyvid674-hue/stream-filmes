@@ -5,7 +5,14 @@
     public int anoLancamento;
     public int classificacaoIndicativa;
 
-
+    public string OterClassificacao()
+    {
+        if (classificacaoIndicativa <= 8)
+        {
+            return "Livre";
+        }
+        return classificacaoIndicativa + "anos";
+    }
 
     public void ExibirInformacaos() 
     {
